@@ -7,7 +7,6 @@ Custom module for magento credit memos
 ## What you get
 
 - cm_api.list method for listing credit memos
-
 - cm_api.item method for info about credit memo
 
 ## How to use it
