@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Mk_Cm>
+      <version>0.1.0</version>
+    </Mk_Cm>
+  </modules>
+  <global>
+    <helpers>
+      <cm>
+        <class>Mk_Cm_Helper</class>
+      </cm>
+    </helpers>
+	<models>
+	  <cm>
+		<class>Mk_Cm_Model</class>
+		<resourceModel>cm_mysql4</resourceModel>
+	  </cm>
+	</models>
+  </global>
+</config> 

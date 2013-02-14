@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <api>
+        <resources>
+            <cm_api translate="title" module="cm">
+                <title>Myapi</title>
+                <acl>cm/api</acl>
+                <model>cm/api</model>
+                <methods>                    
+						<list translate="title" module="cm">
+							<title>Credit Memos</title>
+							<acl>cm/oldcm</acl>
+                            <method>items</method>
+						</list>
+                        <info translate="title" module="cm">
+                            <acl>cm/oldcm</acl>                           
+                        </info>
+                </methods>
+            </cm_api>
+        </resources>
+        <acl>
+            <resources>
+                <cm translate="title" module="cm">
+                    <title>MK Credit Memos</title>
+                    <sort_order>2000</sort_order>                    
+					<list translate="title" module="cm">
+                        <title>List Credit Memos</title>
+                    </list>
+                    <info translate="title" module="cm">
+                        <title>Info for Credit Memo</title>
+                    </info>
+                </cm>
+            </resources>
+        </acl>
+    </api>
+</config>
