@@ -12,16 +12,16 @@ Custom module for magento credit memos
 
 ## How to use it
 
-		<?php 
-		$client = new Zend_XmlRpc_Client($cp);
-		$session = $client->call('login', array($u, $p));
+	<?php 
+	$client = new Zend_XmlRpc_Client($cp);
+	$session = $client->call('login', array($u, $p));
 
-		$allcms = $client->call('call', array($session, 'cm_api.list' )); // ,array(array('status' => 'complete'))
-		foreach ($allcm as $_cm) {
-			$cm = $client->call('call', array($session, 'cm_api.info',  $_cm['increment_id'] ));
-			// do some stuff
-		}
-		?>
+	$allcms = $client->call('call', array($session, 'cm_api.list' )); // ,array(array('status' => 'complete'))
+	foreach ($allcm as $_cm) {
+		$cm = $client->call('call', array($session, 'cm_api.info',  $_cm['increment_id'] ));
+		// do some stuff
+	}
+	?>
 
 
 that's it, hth
